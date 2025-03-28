@@ -24,8 +24,8 @@ try {
     }
   });
 
-  console.log(`Public Files: ${publicFiles.sort().join(', ')}`);
-  console.log(`Hidden Files: ${hiddenFiles.sort().join(', ')}`);
+  console.log(`Public Files: ${publicFiles.join(', ')}`);
+  console.log(`Hidden Files: ${hiddenFiles.join(', ')}`);
 } catch (err) {
   if (err.code === 'ENOENT') {
     console.error(`Directory "${directory}" does not exist.`);
